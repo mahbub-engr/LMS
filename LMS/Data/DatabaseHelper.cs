@@ -14,7 +14,7 @@ namespace LMS.Data
         private string ConnectionString = "Server=.;Database=LMS;Integrated Security=True";
         public void AddBook(Books books) {
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
-                string query = @"inseet into tbl_Books(Title,Category,BasePrice,Charge,FinalPrice) values(@Title,@Category,@BasePrice,@Charge,@FinalPrice)";
+                string query = @"insert into tbl_Books(Title,Category,BasePrice,Charge,FinalPrice) values(@Title,@Category,@BasePrice,@Charge,@FinalPrice)";
                 using SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("Title",books.title);
                 cmd.Parameters.AddWithValue("BasePrice", books.basicPrice);
