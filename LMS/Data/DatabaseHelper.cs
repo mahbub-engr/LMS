@@ -11,7 +11,11 @@ namespace LMS.Data
 {
     internal class DatabaseHelper
     {
+        // connect to databse
         private string ConnectionString = "Server=.;Database=LMS;Integrated Security=True";
+
+
+        //add book method
         public void AddBook(Books books) {
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
                 string query = @"insert into tbl_Books(Title,Category,BasePrice,Charge,FinalPrice) values(@Title,@Category,@BasePrice,@Charge,@FinalPrice)";
