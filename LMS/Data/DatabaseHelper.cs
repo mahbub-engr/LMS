@@ -17,7 +17,7 @@ namespace LMS.Data
 
 
         //add book method
-        public void AddBook(Books books) {
+        internal void AddBook(Books books) {
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {
                 string query = @"insert into tbl_Books(Title,Category,BasePrice,Charge,FinalPrice) values(@Title,@Category,@BasePrice,@Charge,@FinalPrice)";
                 using SqlCommand cmd = new SqlCommand(query, connection);
@@ -33,7 +33,7 @@ namespace LMS.Data
         }
 
         // show data method on console
-        public DataTable GetAllBooks()
+        internal DataTable GetAllBooks()
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(ConnectionString)) {

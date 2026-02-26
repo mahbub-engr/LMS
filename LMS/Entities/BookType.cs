@@ -8,7 +8,7 @@ namespace LMS.Entities
 {
 
 
-    public enum BookType
+    internal enum BookType
     {
        PrintedBooks=1,
        DigitalBooks=2

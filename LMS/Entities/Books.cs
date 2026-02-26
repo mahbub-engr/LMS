@@ -8,14 +8,14 @@ namespace LMS.Entities
 {
     internal class Books
     {
-        public string title { get; }
-        public BookType bookType;
-        public double basicPrice { get; }
-        public double maintainCost { get; set; } = 0;
-        public double finalPrice { get; set; } = 0;
+        internal string title { get; }
+        internal BookType bookType;
+        internal double basicPrice { get; }
+        internal double maintainCost { get; set; } = 0;
+        internal double finalPrice { get; set; } = 0;
        
 
-        public Books(string Title,double Price, BookType bookType)
+        internal Books(string Title,double Price, BookType bookType)
         {
             title = Title;
             basicPrice = Price;

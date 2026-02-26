@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LMS.Service
 {
-    public static class Billing
+    internal static class Billing
     {
-        public static double bill(double basePrice, double MaintainCharge)
+        internal static double bill(double basePrice, double MaintainCharge)
         {
             if (basePrice <= 0)
             {
