@@ -8,5 +8,6 @@ namespace LMS_OOP.Data
 {
     internal class DatabaseHelper
     {
+        internal string connectionString = "Server=.;Database=LMS;Integrated Security = true";
     }
 }

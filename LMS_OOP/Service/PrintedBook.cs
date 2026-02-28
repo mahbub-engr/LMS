@@ -9,13 +9,14 @@ namespace LMS_OOP.Service
 {
     internal class PrintedBook:CalculatePrice
     {
-        internal double maintainCost;
+         
         internal PrintedBook (Books book):base(book)
         {
 
         }
         internal override double Calculate()
         {
+            double maintainCost = 200;
             return maintainCost + _book.basicPrice;
         }
 

@@ -10,7 +10,7 @@ namespace LMS_OOP.Entities
     {
         internal string title { get; private set; }
         internal double basicPrice { get; private set; }
-        private BooksCategory _category;
+        internal BooksCategory _category { get; private set; }
 
         internal Books (string title, double basicPrice ,BooksCategory category)
         {

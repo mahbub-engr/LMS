@@ -9,14 +9,14 @@ namespace LMS_OOP.Service
 {
     class DigitalBook : CalculatePrice
     {
-       internal double maintainCost { get; private set; } 
+        
         internal DigitalBook(Books book):base(book) {
 
         } 
 
         internal override double Calculate()
         {
-           
+            double maintainCost =100;
             return maintainCost + _book.basicPrice;
         }
     }
